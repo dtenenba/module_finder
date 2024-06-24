@@ -1,0 +1,8 @@
+# source me 
+
+#rm -f mf
+
+go build -o mf
+mf completion bash > sourceme.bash
+source sourceme.bash
+

@@ -1,0 +1,8 @@
+# source me - in linux environment
+
+export PATH=$(pwd):$PATH
+source /etc/bash_completion
+source ./sourceme.bash
+
+# to build, run
+# go build -o mf 

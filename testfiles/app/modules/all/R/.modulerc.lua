@@ -1,0 +1,12 @@
+module_version("R/3.5.3-foss-2018b-fh1", "3.5.3")
+module_version("R/3.6.0-foss-2018b", "3.6.0")
+module_version("R/3.6.1-foss-2018b", "3.6.1")
+module_version("R/3.6.2-foss-2019b-fh1", "3.6.2")
+module_version("R/4.0.2-foss-2020b", "4.0.2")
+module_version("R/4.1.1-foss-2020b", "4.1.1")
+module_version("R/4.1.2-foss-2021b", "4.1.2")
+module_version("R/4.2.0-foss-2021b", "4.2.0")
+module_version("R/4.2.2-foss-2022b", "4.2.2")
+module_version("R/4.3.0-foss-2022b", "4.3.0")
+module_version("R/4.3.1-gfbf-2022b", "4.3.1")
+
