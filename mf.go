@@ -351,7 +351,7 @@ var moduleCmd = &cobra.Command{
 			os.Exit(1)
 		}
 		for moduleName := range modules {
-			fmt.Println(moduleName)
+			fmt.Println(modules[moduleName])
 		}
 	},
 }
