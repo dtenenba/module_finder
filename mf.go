@@ -308,7 +308,7 @@ var rootCmd = &cobra.Command{
 		var completions []string
 		for moduleName, originalName := range originalNames {
 			if strings.HasPrefix(strings.ToLower(moduleName), strings.ToLower(toComplete)) {
-				completions = append(completions, originalName)
+				completions = append(completions, strings.ToLower(originalName))
 			}
 		}
 		return completions, cobra.ShellCompDirectiveNoFileComp
