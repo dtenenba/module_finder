@@ -29,7 +29,7 @@ eval $(mf Python fhR unixODBC)
 
 `mf` has tab-completion as well (like `ml`, but it doesn't show module versions).
 
-If a module was not built with a particular toolchain (because it's Go or Java code) then `mf` will just try to pick the most recent overall version of it. The tab completion is case sensitive, so if it is not showing the module you think it should, try a different case. For example, `mf py<tab>` will NOT show `Python` as a completion, but `mf Py` will.
+If a module was not built with a particular toolchain (because it's Go or Java code) then `mf` will just try to pick the most recent overall version of it. The tab completion is case sensitive, so if it is not showing the module you think it should, try a different case. For example, `mf py<tab>` will NOT show `Python` as a completion, but `mf Py<tab>` will.
 
 If `mf` can't find compatible modules from its arguments it will print a message to that effect on standard error, and exit with exit code 1.
 
