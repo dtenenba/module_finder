@@ -301,14 +301,14 @@ var rootCmd = &cobra.Command{
 	ValidArgsFunction: func(cmd *cobra.Command, args []string, toComplete string) ([]string, cobra.ShellCompDirective) {
 		baseDir := getBaseDir()
 
-		modules, originalNames, err := loadModules(baseDir)
+		_, originalNames, err := loadModules(baseDir)
 		if err != nil {
 			return nil, cobra.ShellCompDirectiveError
 		}
 		var completions []string
-		for moduleName := range modules {
+		for moduleName, originalName := range originalNames {
 			if strings.HasPrefix(strings.ToLower(moduleName), strings.ToLower(toComplete)) {
-				completions = append(completions, originalNames[moduleName])
+				completions = append(completions, originalName)
 			}
 		}
 		return completions, cobra.ShellCompDirectiveNoFileComp

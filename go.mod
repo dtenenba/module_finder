@@ -1,4 +1,4 @@
-module github.com/juanmanuel-tirado/savetheworldwithgo/17_cli/cobra/advanced/example_05
+module mf
 
 go 1.15
 
