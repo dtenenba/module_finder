@@ -308,7 +308,7 @@ var rootCmd = &cobra.Command{
 		var completions []string
 		for moduleName, originalName := range originalNames {
 			if strings.HasPrefix(strings.ToLower(moduleName), strings.ToLower(toComplete)) {
-				completions = append(completions, strings.ToLower(originalName))
+				completions = append(completions, originalName)
 			}
 		}
 		return completions, cobra.ShellCompDirectiveNoFileComp
@@ -324,13 +324,7 @@ var completionCmd = &cobra.Command{
 		var err error
 		switch args[0] {
 		case "bash":
-			fmt.Println(`bind 'set completion-ignore-case on'`)
 			err = rootCmd.GenBashCompletion(os.Stdout)
-			fmt.Println()
-			fmt.Println(`bind 'set completion-ignore-case off'`)
-			fmt.Println()
-			fmt.Println("# ex: ts=4 sw=4 et filetype=sh")
-			fmt.Println()
 		case "zsh":
 			err = rootCmd.GenZshCompletion(os.Stdout)
 		case "fish":
