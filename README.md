@@ -66,7 +66,7 @@ fi
 HOWEVER, that was causing problems, so we have taken this code out for now. If you want to try out the tab completions you'll need to run this manually, or put it in your .bashrc:
 
 ```
-source <(mf completion bash)
+source <(/app/bin/mf completion bash)
 ```
 
 I tried to implement case-insensitive completions (so you could type `mf py<tab>` and get `Python` as a match) but it was too tricky and I did not want to permanently change people's settings for other uses of tab-completion. 
