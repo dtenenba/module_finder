@@ -53,7 +53,7 @@ $ ls -l /app/bin/mf
 -rwxr-xr-x 1 scicomp g_scicomp 4447213 Jul 14 12:26 /app/bin/mf
 ```
 
-Note also that the following code should been added to `/app/lmod/lmod/init/bash` to facilitate tab completions:
+Note also that the following code should be added to `/app/lmod/lmod/init/bash` to facilitate tab completions:
 
 ```bash
 # Check if 'mf' is in the PATH
