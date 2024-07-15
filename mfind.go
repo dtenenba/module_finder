@@ -270,7 +270,7 @@ func getBaseDir() string {
 }
 
 var rootCmd = &cobra.Command{
-	Use:   "mf",
+	Use:   "mfind",
 	Short: "Find and load compatible modules",
 	Args:  cobra.MatchAll(cobra.MinimumNArgs(1), cobra.OnlyValidArgs),
 	Run: func(cmd *cobra.Command, args []string) {
