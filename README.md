@@ -53,7 +53,7 @@ $ ls -l /app/bin/mf
 -rwxr-xr-x 1 scicomp g_scicomp 4447213 Jul 14 12:26 /app/bin/mf
 ```
 
-Note also that the following code has been added to `/app/lmod/lmod/init/bash` to facilitate tab completions:
+Note also that the following code should been added to `/app/lmod/lmod/init/bash` to facilitate tab completions:
 
 ```bash
 # Check if 'mf' is in the PATH
@@ -62,6 +62,8 @@ if command -v mf &> /dev/null; then
     source <(mf completion bash)
 fi
 ```
+
+HOWEVER, that was causing problems, so we have taken this code out for now.
 
 I tried to implement case-insensitive completions (so you could type `mf py<tab>` and get `Python` as a match) but it was too tricky and I did not want to permanently change people's settings for other uses of tab-completion. 
 Maybe I will revisit this in the future.
